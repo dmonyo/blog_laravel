@@ -19,10 +19,12 @@ Route::get('/', function () {
     	'Botar la basura',
     	'Copiar mis fotos en el disco',
     	'mandar disco para cuba',
+    	'entender git cracken',
 
     ];
     return view('welcome')
     		->with('name', 'David')
     		->with('tasks', $tasks);
+    		
 
 });
