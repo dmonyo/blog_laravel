@@ -12,5 +12,17 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    /*return view('welcome')
+    		->with('name', 'David');*/
+
+    $tasks = [
+    	'Botar la basura',
+    	'Copiar mis fotos en el disco',
+    	'mandar disco para cuba',
+
+    ];
+    return view('welcome')
+    		->with('name', 'David')
+    		->with('tasks', $tasks);
+
 });
